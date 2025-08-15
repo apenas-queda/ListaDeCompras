@@ -43,7 +43,7 @@
             // pibLogo
             // 
             this.pibLogo.Image = global::ListaDeCompras.Properties.Resources.logo;
-            this.pibLogo.Location = new System.Drawing.Point(35, 68);
+            this.pibLogo.Location = new System.Drawing.Point(12, 49);
             this.pibLogo.Name = "pibLogo";
             this.pibLogo.Size = new System.Drawing.Size(100, 76);
             this.pibLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -54,7 +54,7 @@
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("MS Gothic", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(214, 68);
+            this.lblTitulo.Location = new System.Drawing.Point(243, 49);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(303, 35);
             this.lblTitulo.TabIndex = 1;
@@ -64,7 +64,7 @@
             // 
             this.lblNomedoProduto.AutoSize = true;
             this.lblNomedoProduto.Font = new System.Drawing.Font("MS Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNomedoProduto.Location = new System.Drawing.Point(32, 153);
+            this.lblNomedoProduto.Location = new System.Drawing.Point(9, 188);
             this.lblNomedoProduto.Name = "lblNomedoProduto";
             this.lblNomedoProduto.Size = new System.Drawing.Size(135, 16);
             this.lblNomedoProduto.TabIndex = 2;
@@ -72,45 +72,49 @@
             // 
             // txbProduto
             // 
-            this.txbProduto.Location = new System.Drawing.Point(35, 188);
+            this.txbProduto.Location = new System.Drawing.Point(12, 223);
             this.txbProduto.Name = "txbProduto";
             this.txbProduto.Size = new System.Drawing.Size(207, 20);
             this.txbProduto.TabIndex = 3;
+            this.txbProduto.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txbProduto_KeyDown);
             // 
             // btnAdicionar
             // 
-            this.btnAdicionar.Location = new System.Drawing.Point(35, 293);
+            this.btnAdicionar.Location = new System.Drawing.Point(3, 271);
             this.btnAdicionar.Name = "btnAdicionar";
             this.btnAdicionar.Size = new System.Drawing.Size(207, 59);
             this.btnAdicionar.TabIndex = 4;
             this.btnAdicionar.Text = "Adicionar";
             this.btnAdicionar.UseVisualStyleBackColor = true;
+            this.btnAdicionar.Click += new System.EventHandler(this.btnAdicionar_Click);
             // 
             // libCompras
             // 
             this.libCompras.FormattingEnabled = true;
-            this.libCompras.Location = new System.Drawing.Point(310, 153);
+            this.libCompras.Location = new System.Drawing.Point(306, 188);
             this.libCompras.Name = "libCompras";
             this.libCompras.Size = new System.Drawing.Size(466, 199);
             this.libCompras.TabIndex = 5;
             // 
             // btnApagar
             // 
-            this.btnApagar.Location = new System.Drawing.Point(310, 358);
+            this.btnApagar.Location = new System.Drawing.Point(306, 393);
             this.btnApagar.Name = "btnApagar";
             this.btnApagar.Size = new System.Drawing.Size(207, 59);
             this.btnApagar.TabIndex = 7;
             this.btnApagar.Text = "Apagar";
             this.btnApagar.UseVisualStyleBackColor = true;
+            this.btnApagar.Click += new System.EventHandler(this.btnApagar_Click);
             // 
             // btnLimpar
             // 
-            this.btnLimpar.Location = new System.Drawing.Point(569, 358);
+            this.btnLimpar.Location = new System.Drawing.Point(565, 393);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(207, 59);
             this.btnLimpar.TabIndex = 7;
             this.btnLimpar.Text = "Limpar Lista";
             this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // Form1
             // 
